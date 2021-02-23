@@ -14,6 +14,6 @@ A ‘reset all users’ button was added to the header of the UI which removes t
 
 # Preview
 
-![](/levelone.png)
-![](/leveltwo.png)
-![](/levelthree.png)
+![](/previews/levelone.png)
+![](/previews/leveltwo.png)
+![](/previews/levelthree.png)
