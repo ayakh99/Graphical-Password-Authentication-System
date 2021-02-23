@@ -11,3 +11,9 @@ The CSS code is compiled using node-sass npm package. The source code is located
 The project uses the localStorage property of the window object to store user information.
 
 A ‘reset all users’ button was added to the header of the UI which removes the information saved by the project in the local storage of the browser.
+
+# Preview
+
+![](/levelone.png)
+![](/leveltwo.png)
+![](/levelthree.png)
