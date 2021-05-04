@@ -3,19 +3,9 @@
   background-color: rgba($secondary, 0.2);
   border-radius: 10rem;
   margin: 0 auto;
-
-  &__one {
-    animation-name: bottom;
-    animation-duration: .8s;
-    animation-timing-function: ease-out;
-  }
-
-  &__two,
-  &__three {
-    animation-name: right;
-    animation-duration: .8s;
-    animation-timing-function: ease-out;
-  }
+  animation-name: right;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
   
   &__form {
     width: 50%;
