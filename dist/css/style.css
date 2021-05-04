@@ -7,6 +7,24 @@
 .margin-bottom {
   margin-bottom: 4rem !important; }
 
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -22,7 +40,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #333;
-  background-color: #eee; }
+  background-color: #fff; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -104,7 +122,7 @@ body {
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -166,9 +184,17 @@ body {
 
 .container {
   padding: 4rem 0;
-  background-color: rgba(218, 123, 147, 0.1);
-  border-radius: 3px;
+  background-color: rgba(218, 123, 147, 0.2);
+  border-radius: 10rem;
   margin: 0 auto; }
+  .container__one {
+    animation-name: bottom;
+    animation-duration: .8s;
+    animation-timing-function: ease-out; }
+  .container__two, .container__three {
+    animation-name: right;
+    animation-duration: .8s;
+    animation-timing-function: ease-out; }
   .container__form {
     width: 50%;
     padding: 4rem 2rem;
@@ -185,8 +211,6 @@ body {
     content: "";
     display: table;
     clear: both; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -204,5 +228,6 @@ body {
 .header {
   position: relative;
   padding: 10rem 0;
-  height: 20vh;
+  margin: 5rem auto;
+  height: 10vh;
   text-align: center; }
